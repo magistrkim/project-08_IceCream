@@ -1,0 +1,19 @@
+@mixin dpr($from) {
+  @media (min-device-pixel-ratio: #{$from}), 
+      (min-resolution: (96dpi * $from)), 
+      (min-resolution: "#{$from}dppx") {
+    @content;
+  }
+}
+
+@mixin hidden() {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+@mixin transition($props...) {
+  transition-duration: $mainTransDur;
+  transition-timing-function: $mainTransFunc;
+  transition-property: $props;
+}

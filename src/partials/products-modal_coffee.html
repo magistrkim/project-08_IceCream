@@ -1,0 +1,100 @@
+<div class="modal" data-modal="7">
+  <div class="ingredients">
+    <button class="button__close--hero js-modal-close" type="button">
+      <svg width="20" height="20">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h3 class="ingredients__title">Ice Coffee</h3>
+    <div class="Ingredients__illustration yellow">
+      <img
+        class="Ingredients__image"
+        src="./images/modal-buy-now/coffee.png"
+        srcset="
+          ./images/modal-buy-now/coffee.png    132w,
+          ./images/modal-buy-now/coffee@2x.png 264w
+        "
+        sizes="(min-width: 1200px) 132px, (max-width: 1199px) 132px"
+        alt="ice coffee"
+      />
+    </div>
+    <ul class="calories">
+      <li class="calories__item calories__item--yellow">
+        <span class="calories__weight calories-yellow">250</span>kcal
+      </li>
+      <li class="calories__item calories__item--yellow">
+        <span class="calories__weight calories-yellow">4g</span>Protein...
+      </li>
+      <li class="calories__item calories__item--yellow">
+        <span class="calories__weight calories-yellow">9g </span>Fats
+      </li>
+      <li class="calories__item calories__item--yellow">
+        <span class="calories__weight calories-yellow">40,4g </span>Carbs
+      </li>
+    </ul>
+    <h4 class="ingredients__dscr">Ingredients</h4>
+    <div class="ingredients-list">
+      <ul class="ingredients-list__product">
+        <li class="ingredients-list__item">Milk</li>
+        <li class="ingredients-list__item">Espresso</li>
+        <li class="ingredients-list__item">Caramel</li>
+        <li class="ingredients-list__item">Ice</li>
+        <li class="ingredients-list__item">Condessed milk</li>
+        <li class="ingredients-list__item">Vanilla sugar</li>
+      </ul>
+      <ul class="ingredients-list__weight">
+        <li class="ingredients-list__item">100ml</li>
+        <li class="ingredients-list__item">50ml</li>
+        <li class="ingredients-list__item">15ml</li>
+        <li class="ingredients-list__item">4 pcs</li>
+        <li class="ingredients-list__item">25ml</li>
+        <li class="ingredients-list__item">10g</li>
+      </ul>
+    </div>
+    <!-- Форма -->
+
+    <form class="modal__form modal-form-product__group">
+      <div class="modal__group" role="group">
+        <label class="modal__label" for="name_cli"></label>
+        <div class="wrapper__input">
+          <input
+            class="input__form"
+            type="text"
+            name="user_name"
+            id="name_cli"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Name and surname"
+            placeholder="Name and surname"
+          />
+        </div>
+      </div>
+
+      <div class="modal__group" role="group">
+        <label class="modal__label" for="phone_cli"></label>
+        <div class="wrapper__input">
+          <input
+            class="input__form"
+            type="tel"
+            name="user_phone"
+            id="phone_cli"
+            required
+            placeholder="Phone"
+          />
+        </div>
+      </div>
+
+      <div class="modal__group modal__comment" role="group">
+        <label class="modal__label" for="comment_cli"></label>
+        <textarea
+          class="comment"
+          name="comment"
+          id="comment_cli"
+          rows="4"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="btn-sec button_ingridients" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

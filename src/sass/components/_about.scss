@@ -1,0 +1,196 @@
+.production {
+    background-color: $colorBackground;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 99px;
+    }
+}
+.uppertitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    color: $colorWhite;
+    margin-bottom: 12px;
+    @media screen and (min-width: 768px) {
+        font-weight: 800;
+        font-size: 22px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.23;
+    }
+}
+.production__title {
+    font-family: $secondaryFontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-align: center;
+    text-transform: uppercase;
+    color: $colorWhite;
+    display: block;
+    margin: 0 auto 32px auto;
+    min-width: 220px;
+
+    @media screen and (min-width:768px) {
+        font-size: 34px;
+        letter-spacing: 0.06em;
+        width: 456px;
+        margin-bottom: 72px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.25;
+        margin-bottom: 82px;
+        width: 483px;
+    }
+}
+
+.production__content {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 38px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 109px;
+    }
+}
+
+.production__thumb {
+    position: relative;
+    background-color: rgba(248, 210, 78, 0.7);
+    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+    width: 279px;
+    height: 278px;
+
+    @media screen and (max-width: 767px) {
+        margin: 0 auto 62px auto;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 330px;
+        height: 330px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        width: 490px;
+        height: 490px;
+    }
+}
+
+.production__image {
+    position: absolute;
+    top: 22px;
+    border-radius: 51%;
+    width: 279px;
+    height: 278px;
+
+    @media screen and (min-width: 768px) {
+        border-radius: 1228px;
+        width: 330px;
+        height: 330px;
+        top: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        border-radius: 1852.2px;
+        width: 490px;
+        height: 490px;
+        top: 39px;
+    }
+}
+
+
+.production__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.75;
+    color: $colorWhite;
+    margin: 0 auto 4px auto;
+
+    @media screen and (max-width: 479px) {
+        width: 220px;
+    }
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+    @media screen and (min-width:768px) {
+        width: 334px;
+        margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 463px;
+        font-size: 14px;
+    }
+}
+.production__information {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.58;
+    color: $colorWhite;
+    margin: 0 auto 10px auto;
+    
+    @media screen and (max-width: 479px) {
+        width: 220px;
+    }
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        line-height: 1.75;
+        width: 334px;
+        margin-bottom: 8px;
+        
+    }
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 463px;
+        font-size: 14px;
+    }
+}
+.production__paragraph {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: $colorWhite;
+        width: 300px;
+        margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        width: 437px;
+        margin-bottom: 24px;
+    }
+}
+.production__btn {
+    @include btn-prim();
+    display: flex;
+    
+    @media screen and (max-width: 767px) {
+        margin: 0 auto;
+    }
+
+}

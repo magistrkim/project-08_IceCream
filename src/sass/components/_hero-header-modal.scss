@@ -1,0 +1,371 @@
+.header_modal {
+  
+  z-index: 9999;
+  padding: 28px;
+  
+  @media screen and (min-width: 769px) {
+    max-width: 568px;
+    max-height: 644px;
+    padding: 32px 54px;
+  }
+
+  background: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+.button__close--hero {
+  position: absolute;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: #fcfcfc;
+  border: none;
+}
+.button__close-icon {
+  fill: $colorBlack;
+}
+.hero-modal__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  // Змінна
+  color: $colorBlack;
+}
+.hero-modal--distance {
+  margin-bottom: 83px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 103px;
+  }
+}
+.hero-modal__list {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  z-index: 3;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 82px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 82px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
+  // Змінна
+  list-style: none;
+}
+.hero-modal__item {
+  align-items: center;
+  width: 132px;
+  pointer-events: none;
+}
+.hero-modal__check--cream {
+  background-color: $colorProduktsCream;
+  border: 2px solid #96af8c;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+.hero-modal__check--coffee {
+  background: $colorProduktsCoffee;
+  border: solid #efd478;
+  box-shadow: 2px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+.hero-modal__check--milkshakes {
+  // Змінна
+  background: $colorProduktsCoffeeMilkshakes;
+  border: 2px solid #d6936d;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+%before_hero {
+  z-index: 2;
+  position: absolute;
+  content: '';
+  width: 132px;
+  height: 132px;
+  left: 50%;
+  top: -66px;
+  transform: translateX(-50%);
+  border-radius: 98px;
+}
+.hero-modal__check--cream::before {
+  @extend %before_hero;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  @media screen and (min-width: 768px) {
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+  }
+}
+.hero-modal__check--coffee::before {
+  @extend %before_hero;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  @media screen and (min-width: 768px) {
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  }
+  @media screen and (min-width: 1200px) {
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  }
+}
+.hero-modal__check--milkshakes::before {
+  @extend %before_hero;
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  @media screen and (min-width: 768px) {
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (min-width: 1200px) {
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+  }
+}
+%after_hero {
+  z-index: 3;
+  position: absolute;
+  content: '';
+  width: 132px;
+  height: 132px;
+  left: 50%;
+  top: -73px;
+  transform: translateX(-50%);
+  border-radius: 98px;
+}
+.hero-modal__check--cream::after {
+  @extend %after_hero;
+  // Mobile and Tablet
+  background: url(../images/modal-buy-now/cream.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/modal-buy-now/cream@2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    background: url(../images/modal-buy-now/cream.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal-buy-now/cream@2x.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+.hero-modal__check--coffee::after {
+  @extend %after_hero;
+  background: url(../images/modal-buy-now/cofee.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/modal-buy-now/cofee@2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    background: url(../images/modal-buy-now/cofee.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal-buy-now/cofee@2x.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+.hero-modal__check--milkshakes::after {
+  @extend %after_hero;
+  background: url(../images/modal-buy-now/milkshakes.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/modal-buy-now/milkshakes@2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    background: url(../images/modal-buy-now/milkshakes.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal-buy-now/milkshakes@2x.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+// Форма
+.modal-form-hero__group {
+  @media screen and (max-width: 767px) {
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.modal-form-hero__field {
+  @media screen and (max-width: 767px) {
+    width: 224px;
+    height: 32px;
+    padding: 8px 12px;
+  }
+  @media screen and (min-width: 767px) {
+    width: 368px;
+    height: 42px;
+    padding: 11px 16px;
+  }
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 4;
+
+  color: $colorBlack;
+}
+.modal-form-hero__field--comment {
+  @media screen and (max-width: 767px) {
+    width: 224px;
+    height: 65px;
+  }
+  @media screen and (min-width: 767px) {
+    width: 368px;
+    height: 84px;
+  }
+
+  padding: 8px 12px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  margin-bottom: 32px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 4;
+
+  color: $colorBlack;
+}
+
+.btn-hero-modal {
+  margin: 0 auto;
+}
+
+.btn-sec {
+  @include btn-sec();
+}
+
+// Чекбокс
+
+.hero-modal__choice {
+  position: relative;
+}
+.hero-modal__checkform {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 82px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
+}
+
+.hero-modal__checkbox {
+  position: relative;
+  z-index: 4;
+  height: 135px;
+  width: 132px;
+}
+
+.hero-modal__check {
+  position: absolute;
+  z-index: 2;
+  appearance: none;
+
+  opacity: 1;
+
+  height: inherit;
+  width: inherit;
+
+  cursor: $iconCustomPointer, auto;
+
+  border-radius: 15px;
+}
+
+.hero-modal__check:checked {
+  background: #fcfcfc;
+}
+
+.hero-modal__subtitle {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  z-index: 5;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  
+  color: $colorBlack;
+
+   &:hover,
+  &:focus {
+    cursor: $iconCustomPointer, auto;
+  }
+}

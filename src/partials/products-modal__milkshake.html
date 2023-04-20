@@ -1,0 +1,100 @@
+<div class="modal" data-modal="6">
+  <div class="ingredients">
+    <button class="button__close--hero js-modal-close" type="button">
+      <svg width="20" height="20">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h3 class="ingredients__title">Milkshake</h3>
+    <div class="Ingredients__illustration red">
+      <img
+        class="Ingredients__image"
+        src="./images/modal-buy-now/milkshake.png"
+        srcset="
+          ./images/modal-buy-now/milkshake.png    132w,
+          ./images/modal-buy-now/milkshake@2x.png 264w
+        "
+        sizes="(min-width: 1200px) 132px, (max-width: 1199px) 132px"
+        alt="milkshake"
+      />
+    </div>
+    <ul class="calories">
+      <li class="calories__item calories__item--red">
+        <span class="calories__weight calories-red">620</span>kcal
+      </li>
+      <li class="calories__item calories__item--red">
+        <span class="calories__weight calories-red">20g</span>Protein...
+      </li>
+      <li class="calories__item calories__item--red">
+        <span class="calories__weight calories-red">19g </span>Fats
+      </li>
+      <li class="calories__item calories__item--red">
+        <span class="calories__weight calories-red">104g </span>Carbs
+      </li>
+    </ul>
+    <h4 class="ingredients__dscr">Ingredients</h4>
+    <div class="ingredients-list">
+      <ul class="ingredients-list__product">
+        <li class="ingredients-list__item">Milk</li>
+        <li class="ingredients-list__item">Vanilla ice cream</li>
+        <li class="ingredients-list__item">Vanilla sugar</li>
+        <li class="ingredients-list__item">Cream</li>
+        <li class="ingredients-list__item">Milk chocolate</li>
+        <li class="ingredients-list__item">Marshmellow</li>
+      </ul>
+      <ul class="ingredients-list__weight">
+        <li class="ingredients-list__item">200ml</li>
+        <li class="ingredients-list__item">100g</li>
+        <li class="ingredients-list__item">2g</li>
+        <li class="ingredients-list__item">30g</li>
+        <li class="ingredients-list__item">20g</li>
+        <li class="ingredients-list__item">15g</li>
+      </ul>
+    </div>
+    <!-- Форма -->
+
+    <form class="modal__form modal-form-product__group">
+      <div class="modal__group" role="group">
+        <label class="modal__label" for="name_cl"></label>
+        <div class="wrapper__input">
+          <input
+            class="input__form"
+            type="text"
+            name="user_name"
+            id="name_cl"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Name and surname"
+            placeholder="Name and surname"
+          />
+        </div>
+      </div>
+
+      <div class="modal__group" role="group">
+        <label class="modal__label" for="phone_cl"></label>
+        <div class="wrapper__input">
+          <input
+            class="input__form"
+            type="tel"
+            name="user_phone"
+            id="phone_cl"
+            required
+            placeholder="Phone"
+          />
+        </div>
+      </div>
+
+      <div class="modal__group modal__comment" role="group">
+        <label class="modal__label" for="comment_cl"></label>
+        <textarea
+          class="comment"
+          name="comment"
+          id="comment_cl"
+          rows="4"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="btn-sec button_ingridients" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

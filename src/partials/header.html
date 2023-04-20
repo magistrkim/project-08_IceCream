@@ -1,0 +1,113 @@
+<header class="header" data-header>
+  <div class="header__container">
+    <!-- logo -->
+    <a href="./index.html" class="logo header__logo">
+      <svg class="logo__icon">
+        <use href="./images/icons.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+    <!-- main nav -->
+    <!-- anim: cssanimation sequence leRotateYZoomIn -->
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li>
+          <a href="./index.html" class="header__nav-link"
+            ><span class="header__nav-link-text">Home</span></a
+          >
+        </li>
+        <li>
+          <a href="./index.html#process" class="header__nav-link"
+            ><span class="header__nav-link-text">How it&rsquo;s made?</span></a
+          >
+        </li>
+        <li>
+          <a href="./index.html#products" class="header__nav-link"
+            ><span class="header__nav-link-text">Our products</span></a
+          >
+        </li>
+        <li>
+          <a href="./index.html#contacts" class="header__nav-link"
+            ><span class="header__nav-link-text">Contact</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- menu open -->
+
+    <button
+      class="header__btn-menu"
+      aria-expanded="false"
+      aria-controls="mobile_menu"
+      data-menu-open
+    >
+      <svg class="header__icon-menu">
+        <use class="open" href="./images/icons.svg#icon-menu-open"></use>
+      </svg>
+    </button>
+
+    <!-- buy now -->
+
+    <button class="header__btn js-open-modal" data-modal="4" type="button">
+      Buy now
+      <svg class="header__btn-icon">
+        <use href="./images/icons.svg#icon-arrow-short"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- mobile menu -->
+
+  <aside
+    class="mobile-menu mobile-menu--hidden"
+    id="mobile_menu"
+    data-mobile-menu
+  >
+    <ul class="mobile-menu__header">
+      <!-- logo -->
+      <li>
+        <a href="./index.html" class="logo mobile-menu__logo">
+          <svg class="logo__icon">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </li>
+      <!-- menu close -->
+      <li>
+        <button class="mobile-menu__close" type="button" data-menu-close>
+          <svg class="mobile-menu__close-icon">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <!-- nav -->
+    <ul class="mobile-menu__nav" data-menu-nav>
+      <li><a href="./index.html" class="mobile-menu__nav-link">Home</a></li>
+      <li>
+        <a href="./index.html#process" class="mobile-menu__nav-link"
+          >How it&rsquo;s made?</a
+        >
+      </li>
+      <li>
+        <a href="./index.html#products" class="mobile-menu__nav-link"
+          >Our products</a
+        >
+      </li>
+      <li>
+        <a href="./index.html#contacts" class="mobile-menu__nav-link"
+          >Contact</a
+        >
+      </li>
+    </ul>
+    <!-- buy now -->
+    <button class="mobile-menu__btn js-open-modal" data-modal="4" type="button">
+      Buy now
+      <svg class="mobile-menu__btn-icon">
+        <use href="./images/icons.svg#icon-arrow-short"></use>
+      </svg>
+    </button>
+  </aside>
+</header>
